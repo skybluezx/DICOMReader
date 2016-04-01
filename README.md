@@ -21,7 +21,7 @@ DICOMReader库仅包含DICOMReader一个类，使用时实例化该类并利用�
     	* (2)	DICOMReader(std::string dictionaryFileURL)
   * `参数`	dictionaryFileURL(2)	数据字典文件的绝对路径
   * `备注`	使用(1)后，DICOMReader对象的数据字典为空，只能解析显示语法的DICOM文件。<br>使用(2)但无法打开数据字典文件或数据字典文件格式错误，该方法会抛出字符串型异常说明错误信息。<br><br>
-  		`DICOMReader库提供了一个数据字典的示例文件dictionary_demo，但其中只包含了少量的DICOM字段。`
+  		> DICOMReader库提供了一个数据字典的示例文件`dictionary_demo`，但其中只包含了少量的DICOM字段。
 
 * read
   * `功能`	读取DICOM文件并解析
