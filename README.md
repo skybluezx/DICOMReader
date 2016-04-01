@@ -38,20 +38,20 @@ DICOMReader库仅包含DICOMReader一个类，使用时实例化该类并利用�
 * getValue
   * `功能`	获得DICOM元素的值
   * `语法`
-   	* (1) 	bool getValue(std::string groupNumber, std::string elementNumber, std::string& value),
-    	* (2)	bool getValue(std::string groupNumber, std::string elementNumber, unsigned short& value)
-    	* (3)	bool getValue(std::string groupNumber, std::string elementNumber, float& value)
-    	* (4)	bool getValue(std::string groupNumber, std::string elementNumber, double& value)
-    	* (5)	bool getValue(std::string groupNumber, std::string elementNumber, unsigned char*& bytes, unsigned long int& bytesLength)
+   	* (1) 	bool getValue(std::string groupNumber, std::string elementNumber, std::string& value)
+	* (2)	bool getValue(std::string groupNumber, std::string elementNumber, unsigned short& value)
+	* (3)	bool getValue(std::string groupNumber, std::string elementNumber, float& value)
+	* (4)	bool getValue(std::string groupNumber, std::string elementNumber, double& value)
+	* (5)	bool getValue(std::string groupNumber, std::string elementNumber, unsigned char*& bytes, unsigned long int& bytesLength)
   * `参数`
 	* groupNumber(1-5)	组标签
 	* elementNumber(1-5)	元素标签
-	* value(1)	解析出的字符串型值
-	* value(2)	解析出的无符号短整型值
-	* value(3)	解析出的单精度浮点型值
-	* value(4)	解析出的双精度浮点型值
-	* bytes(5)	解析出的字节数组
-    	* bytesLength(5)	解析出的字节数组的长度
+	* value(1)		解析出的字符串型值
+	* value(2)		解析出的无符号短整型值
+	* value(3)		解析出的单精度浮点型值
+	* value(4)		解析出的双精度浮点型值
+	* bytes(5)		解析出的字节数组
+	* bytesLength(5)	解析出的字节数组的长度
   * `返回值`	数据字典中找到对应元素返回true，否则返回false
   * `备注`	对应元素的值无法以给定类型解析时将抛出字符串型异常。
 
