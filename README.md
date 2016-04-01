@@ -64,4 +64,4 @@ DICOMReader库仅包含DICOMReader一个类，使用时实例化该类并利用�
     释放DICOMReader当前打开文件的字节数组，同时释放DICOMReader对象的数据字典以及其他内部空间。
 
 ##许可协议
-DICOMReader使用MIT许可证。DICOMReader使用了JsonCpp用于读写JSON类型的数据字典。关于DICOMReader和JsonCpp的详细内容见License文件。
+DICOMReader使用MIT许可证。DICOMReader使用了JsonCpp用于读写JSON类型的数据字典。关于DICOMReader和JsonCpp许可的详细内容见License文件。
