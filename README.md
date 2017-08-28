@@ -1,19 +1,19 @@
 # DICOMReader
 A C++ library for parsing DICOM file.
 
-##简介
+## 简介
 DICOMReader是一个用于解析DICOM文件的轻量级C++库。
 
 注：测试版仅提供Windows平台的动态链接库版本且只能用于C++语言编写的程序。
 
-##安装与使用
+## 安装与使用
 Windows版本包含DICOMReader.h、DICOMReader.lib和DICOMReader.dll三个文件。静态链接和动态链接的方法请参考其他DLL的使用方法。
 
 DICOMReader库仅包含DICOMReader一个类，使用时实例化该类并利用该类提供的各个成员方法即可完成DICOM文件的解析。使用结束后需调用close方法关闭DICOMReader中的打开的文件，否则存在内存泄露风险。
 
-##API
-###DICOMReader类
-####成员方法
+## API
+### DICOMReader类
+#### 成员方法
 * DICOMReader
   * `功能`	构造方法 
   * `语法`
@@ -65,5 +65,5 @@ DICOMReader库仅包含DICOMReader一个类，使用时实例化该类并利用�
   * `备注`	
     释放DICOMReader当前打开文件的字节数组，同时释放DICOMReader对象的数据字典以及其他内部空间。
 
-##许可协议
+## 许可协议
 DICOMReader使用MIT许可证。DICOMReader使用了JsonCpp用于读写JSON类型的数据字典。关于DICOMReader和JsonCpp许可的详细内容见License文件。
